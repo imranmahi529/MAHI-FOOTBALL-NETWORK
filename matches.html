@@ -1,1 +1,103 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Match | MFN</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h2>MFN</h2>
+</div>
+
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="player-profile.html">Profile</a>
+<a href="#">Logout</a>
+</nav>
+
+</header>
+
+<section class="add-match">
+
+<h1>Add New Match</h1>
+
+<form>
+
+<label>Match Date</label>
+<input type="date">
+
+<label>Tournament Name</label>
+<input type="text" placeholder="Tournament Name">
+
+<label>Opponent Team</label>
+<input type="text" placeholder="Opponent Team">
+
+<label>Your Team</label>
+<input type="text" placeholder="Your Team">
+
+<label>Position Played</label>
+<select>
+<option>Goalkeeper</option>
+<option>Defender</option>
+<option>Midfielder</option>
+<option>Forward</option>
+</select>
+
+<label>Match Result</label>
+<select>
+<option>Win</option>
+<option>Draw</option>
+<option>Lose</option>
+</select>
+
+<label>Goals</label>
+<input type="number" min="0">
+
+<label>Assists</label>
+<input type="number" min="0">
+
+<label>Yellow Cards</label>
+<input type="number" min="0">
+
+<label>Red Cards</label>
+<input type="number" min="0">
+
+<label>Minutes Played</label>
+<input type="number">
+
+<label>Player Rating (1-10)</label>
+<input type="number" min="1" max="10" step="0.1">
+
+<label>Man of the Match</label>
+<select>
+<option>No</option>
+<option>Yes</option>
+</select>
+
+<label>Match Photos</label>
+<input type="file" multiple>
+
+<label>Highlight Video</label>
+<input type="file">
+
+<label>Match Proof</label>
+<input type="file">
+
+<label>Match Description</label>
+<textarea rows="5" placeholder="Write about your performance..."></textarea>
+
+<button type="submit">Submit Match</button>
+
+</form>
+
+</section>
+
+</body>
+</html>
